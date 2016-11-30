@@ -500,9 +500,9 @@ open class KolodaView: UIView, DraggableCardDelegate {
             return
         }
         
-        if currentCardIndex == 0 {
+        /*if currentCardIndex == 0 {
             clear()
-        }
+        }*/
         
         countOfCards = Int(numberOfCards)
         if countOfCards - (currentCardIndex + visibleCards.count) > 0 {
