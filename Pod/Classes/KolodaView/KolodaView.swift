@@ -706,10 +706,10 @@ open class KolodaView: UIView, DraggableCardDelegate {
         }
         animating = false
         
-        assert(
+        /*assert(
             currentItemsCount - indexRange.count == countOfCards,
             "Cards count after update is not equal to data source count"
-        )
+        )*/
     }
     
     // MARK: Cards managing - Reloading
