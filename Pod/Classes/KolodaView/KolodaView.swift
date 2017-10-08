@@ -121,7 +121,7 @@ open class KolodaView: UIView, DraggableCardDelegate {
         return visibleCards.isEmpty
     }
     
-    private(set) public var currentCardIndex = 0
+    /*private(set)*/ public var currentCardIndex = 0
     private(set) public var countOfCards = 0
     public var countOfVisibleCards = defaultCountOfVisibleCards
     private var visibleCards = [DraggableCardView]()
@@ -530,9 +530,9 @@ open class KolodaView: UIView, DraggableCardDelegate {
             return
         }
         
-        if currentCardIndex == 0 {
+        /*if currentCardIndex == 0 {
             clear()
-        }
+        }*/
         
         countOfCards = Int(numberOfCards)
         if countOfCards - (currentCardIndex + visibleCards.count) > 0 {
